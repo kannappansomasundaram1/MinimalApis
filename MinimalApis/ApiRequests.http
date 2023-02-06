@@ -1,0 +1,23 @@
+﻿### Greetings
+GET https://localhost:7254
+
+### Greetings with route
+GET https://localhost:7254/Kannappan
+
+### Greetings with route and query params
+GET https://localhost:7254/Kannappan?lastname=Somasundaram
+
+### Special with Query Params
+GET https://localhost:7254/special?bookId=1&bookName=Hamlet
+
+### Get Books by Id
+GET https://localhost:7254/Books/1
+
+### Add Book
+POST https://localhost:7254/Books
+Content-Type: application/json
+
+{
+  "Id" : 2,
+  "Title" : "Refactoring Improving the design of existing code"
+}
